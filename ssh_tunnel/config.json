@@ -1,6 +1,6 @@
 {
   "name": "SSH Tunnel",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "slug": "ssh_tunnel",
   "description": "Create SSH tunnel to public server",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -14,7 +14,6 @@
     "tunnel_http": true,
     "tunnel_https": true,
     "socks_port": 1080,
-    "advanced": ""
   },
   "schema": {
     "ssh_host": "str",
@@ -23,6 +22,7 @@
     "tunnel_http": "bool",
     "tunnel_https": "bool",
     "socks_port": "int",
-    "advanced": "str"
+    "advanced": "str?",
+    "before": "str?"
   }
 }

@@ -46,12 +46,12 @@ while true
 do
     if ! bashio::config.is_empty 'before'; then
         CMD="${BASE} ${SRV} $(bashio::config 'before')"
-        bashio::log.info "[ $(date +'%m/%d/%Y') ] run: ${CMD}"
+        bashio::log.info "[ $(date +'%m-%d-%Y') ] run: ${CMD}"
         eval $CMD
     fi
 
     CMD="${BASE} ${TUN} ${SRV}"
-    bashio::log.info "[ $(date +'%m/%d/%Y') ] run tunnel: ${CMD}"
+    bashio::log.info "[ $(date +'%m-%d-%Y') ] run tunnel: ${CMD}"
     eval $CMD
 
     sleep 30

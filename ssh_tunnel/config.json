@@ -1,6 +1,6 @@
 {
   "name": "SSH Tunnel",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "slug": "ssh_tunnel",
   "description": "Create SSH tunnel to public server",
   "url": "https://github.com/AlexxIT/hassio-addons/tree/master/ssh_tunnel",

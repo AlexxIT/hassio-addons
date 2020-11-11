@@ -1,0 +1,24 @@
+{
+  "name": "RTSP2WebRTC",
+  "version": "0.1.0",
+  "slug": "rtsp2webrtc",
+  "description": "RTSP to WebRTC proxy",
+  "url": "https://github.com/AlexxIT/hassio-addons/tree/master/rtsp2webrtc",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:8083]/",
+  "host_network": true,
+  "options": {
+    "streams": [{
+      "name": "Sonoff",
+      "url": "rtsp://rtsp:12345678@192.168.1.123:554/av_stream/ch0"
+    }]
+  },
+  "schema": {
+    "streams": [{
+      "name": "str",
+      "url": "url"
+    }]
+  }
+}

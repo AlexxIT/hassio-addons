@@ -23,20 +23,11 @@ func serveHTTP() {
 	router.LoadHTMLGlob("web/templates/*")
 	router.GET("/", func(c *gin.Context) {
 		fi, all := Config.list()
+		suuid := c.DefaultQuery("player", fi)
 		sort.Strings(all)
 		c.HTML(http.StatusOK, "index.tmpl", gin.H{
 			"port":     Config.Server.HTTPPort,
-			"suuid":    fi,
-			"suuidMap": all,
-			"version":  time.Now().String(),
-		})
-	})
-	router.GET("/player/:suuid", func(c *gin.Context) {
-		_, all := Config.list()
-		sort.Strings(all)
-		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"port":     Config.Server.HTTPPort,
-			"suuid":    c.Param("suuid"),
+			"suuid":    suuid,
 			"suuidMap": all,
 			"version":  time.Now().String(),
 		})

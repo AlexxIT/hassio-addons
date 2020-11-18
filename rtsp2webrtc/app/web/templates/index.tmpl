@@ -16,7 +16,7 @@
     <div class="col-3">
       <div class="list-group">
   {{ range .suuidMap }}
-    <a href="/player/{{ . }}" id="{{ . }}" name="{{ . }}" class="list-group-item list-group-item-action">{{ . }}</a>
+    <a href="?player={{ . }}" id="{{ . }}" name="{{ . }}" class="list-group-item list-group-item-action">{{ . }}</a>
   {{ end }}
 </div>
     </div>

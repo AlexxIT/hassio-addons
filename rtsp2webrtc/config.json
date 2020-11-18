@@ -1,15 +1,16 @@
 {
   "name": "RTSP2WebRTC",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "slug": "rtsp2webrtc",
   "description": "RTSP to WebRTC proxy",
-  "url": "https://github.com/AlexxIT/hassio-addons/tree/master/rtsp2webrtc",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "url": "https://github.com/AlexxIT/hassio-addons/tree/master/rtsp2webrtc",
   "startup": "system",
   "boot": "auto",
+  "host_network": true,
   "ingress": true,
   "ingress_port": 8083,
-  "host_network": true,
+  "panel_icon": "mdi:camera-wireless",
   "options": {
     "streams": [{
       "name": "Sonoff",

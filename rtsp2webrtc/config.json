@@ -1,13 +1,14 @@
 {
   "name": "RTSP2WebRTC",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "slug": "rtsp2webrtc",
   "description": "RTSP to WebRTC proxy",
   "url": "https://github.com/AlexxIT/hassio-addons/tree/master/rtsp2webrtc",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "system",
   "boot": "auto",
-  "webui": "http://[HOST]:[PORT:8083]/",
+  "ingress": true,
+  "ingress_port": 8083,
   "host_network": true,
   "options": {
     "streams": [{

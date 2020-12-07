@@ -5,6 +5,29 @@
 Based on:
  - [Pion](https://github.com/pion/webrtc) - pure Go implementation of WebRTC 
  - [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC) - Go app by [@deepch](https://github.com/deepch) and [@vdalex25](https://github.com/vdalex25)
+ 
+Why WebRTC:
+- works in any modern browser, even on mobiles
+- the only browser technology with minimal camera stream delays (0.5 seconds and below)
+- works well with unstable channel
+- does not use transcoding and does not load the CPU
+- support camera stream with sound
+
+Tested on:
+- macOS: Google Chrome, Safari
+- Windows: Google Chrome
+- Android: Google Chrome
+
+Limitations:
+- works only with H.264 camaras
+- for external access you need a white IP address (without provider NAT), dynamic IP is also supported
+
+Known work cameras:
+- Sonoff GK-200MP2-B
+- EZVIZ C3S
+
+Known problem cameras:
+- Reolink brand
 
 Support external camera access. You need to forward UDP ports 50000-50009 to Hass.io server on your router.
 

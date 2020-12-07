@@ -1,3 +1,7 @@
+## v0.1.3 - 2020-12-07
+
+- Auto restart app when it crushed
+
 ## v0.1.2 - 2020-11-18
 
 - Fix camera switch in Ingress

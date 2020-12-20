@@ -23,11 +23,15 @@ Limitations:
 - for external access you need a white IP address (without provider NAT), dynamic IP is also supported
 
 Known work cameras:
-- Sonoff GK-200MP2-B
-- EZVIZ C3S
-
-Known problem cameras:
-- Reolink brand
+- Sonoff GK-200MP2-B  
+   `rtsp://rtsp:12345678@192.168.1.123:554/av_stream/ch0`  
+   `rtsp://rtsp:12345678@192.168.1.123:554/av_stream/ch1`
+- EZVIZ C3S  
+   `rtsp://admin:111111@192.168.1.123:554/h264/ch01/main/av_stream`  
+   `rtsp://admin:111111@192.168.1.123:554/h264/ch01/sub/av_stream`
+- Reolink brand  
+   `rtsp://admin:111111@192.168.1.123:554/h264Preview_01_main`  
+   `rtsp://admin:111111@192.168.1.123:554/h264Preview_01_sub`
 
 Support external camera access. You need to forward UDP ports 50000-50009 to Hass.io server on your router.
 

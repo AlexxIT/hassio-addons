@@ -1,3 +1,7 @@
+## v0.1.4 - 2021-01-10
+
+- Update Pion (main WebRTC library) to v3
+
 ## v0.1.3 - 2020-12-07
 
 - Auto restart app when it crushed

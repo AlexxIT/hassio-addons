@@ -29,7 +29,6 @@ pc.oniceconnectionstatechange = e => log(pc.iceConnectionState)
 
 
 async function handleNegotiationNeededEvent() {
-  // описываем, что умеет наш браузер
   let offer = await pc.createOffer();
   await pc.setLocalDescription(offer);
   getRemoteSdp();
@@ -45,20 +44,14 @@ function getCodecInfo() {
   $.get("codec/" + suuid, function(data) {
     try {
       data = JSON.parse(data);
-      if (data.length > 1) {
-        log('add audio Transceiver')
-        pc.addTransceiver('audio', {
-          'direction': 'sendrecv'
-        })
-      }
     } catch (e) {
       console.log(e);
     } finally {
-
-      log('add video Transceiver')
-      pc.addTransceiver('video', {
-        'direction': 'sendrecv'
-      });
+      $.each(data,function(index,value){
+        pc.addTransceiver(value.Type, {
+          'direction': 'sendrecv'
+        })
+      })
       //send ping becouse PION not handle RTCSessionDescription.close()
       sendChannel = pc.createDataChannel('foo');
       sendChannel.onclose = () => console.log('sendChannel has closed');

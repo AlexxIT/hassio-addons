@@ -1,9 +1,11 @@
 module github.com/deepch/RTSPtoWebRTC
 
-go 1.14
+go 1.15
 
 require (
-	github.com/deepch/vdk v0.0.0-20200419065055-420338e0cc50
+	github.com/deepch/vdk v0.0.0-20210109142448-33b07c6a20f1
 	github.com/gin-gonic/gin v1.6.3
-	github.com/pion/webrtc/v2 v2.2.9
+	github.com/pion/interceptor v0.0.8
+	github.com/pion/webrtc/v2 v2.2.23
+	github.com/pion/webrtc/v3 v3.0.1
 )

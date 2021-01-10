@@ -1,6 +1,6 @@
 {
   "name": "RTSP2WebRTC",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "slug": "rtsp2webrtc",
   "description": "RTSP to WebRTC proxy",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -15,6 +15,9 @@
     "streams": [{
       "name": "Sonoff",
       "url": "rtsp://rtsp:12345678@192.168.1.123:554/av_stream/ch0"
+    }, {
+      "name": "Demo_H264_AAC",
+      "url": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
     }]
   },
   "schema": {

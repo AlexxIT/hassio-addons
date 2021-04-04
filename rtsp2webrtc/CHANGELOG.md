@@ -1,3 +1,8 @@
+## v0.2.0 - 2021-01-10
+
+- Fix Hass snapshot size #6
+- Fix errors while install RTSP2WebRTC #10
+
 ## v0.1.4 - 2021-01-10
 
 - Update Pion (main WebRTC library) to v3

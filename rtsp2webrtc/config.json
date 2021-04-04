@@ -1,10 +1,11 @@
 {
   "name": "RTSP2WebRTC",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "slug": "rtsp2webrtc",
   "description": "RTSP to WebRTC proxy",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "url": "https://github.com/AlexxIT/hassio-addons/tree/master/rtsp2webrtc",
+  "url": "https://github.com/AlexxIT/hassio-rtsp2webrtc",
+  "image": "alexxit/hassio-rtsp2webrtc-{arch}",
   "startup": "system",
   "boot": "auto",
   "host_network": true,

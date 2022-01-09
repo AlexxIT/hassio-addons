@@ -38,8 +38,6 @@ if ! bashio::config.equals 'ssh_port' 22; then
     SRV="-p $(bashio::config 'ssh_port') ${SRV}"
 fi
 
-SRV="-o StrictHostKeyChecking=no ${SRV}"
-
 set +e
 
 while true

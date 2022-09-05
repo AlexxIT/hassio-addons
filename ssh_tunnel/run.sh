@@ -1,4 +1,5 @@
-#!/usr/bin/env bashio
+#!/usr/bin/with-contenv bashio
+
 set -e
 
 # https://github.com/hassio-addons/bashio

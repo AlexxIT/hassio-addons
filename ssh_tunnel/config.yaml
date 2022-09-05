@@ -1,0 +1,27 @@
+name: SSH Tunnel
+description: Create SSH tunnel to public server
+url: https://github.com/AlexxIT/hassio-addons/tree/master/ssh_tunnel
+arch: [ amd64, aarch64, i386, armv7, armhf ]
+
+# https://developers.home-assistant.io/docs/add-ons/configuration
+version: 1.0.6
+slug: ssh_tunnel
+init: false
+startup: system
+host_network: true
+options:
+  ssh_host: 123.123.123.123
+  ssh_user: root
+  ssh_port: 22
+  tunnel_http: true
+  tunnel_https: true
+  socks_port: 1080
+schema:
+  ssh_host: "str"
+  ssh_user: "str"
+  ssh_port: "int"
+  tunnel_http: "bool"
+  tunnel_https: "bool"
+  socks_port: "int"
+  advanced: "str?"
+  before: "str?"

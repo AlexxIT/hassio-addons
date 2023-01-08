@@ -1,6 +1,6 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
 name: go2rtc master hardware
-description: The latest unstable version (with GPU drivers)
+description: Hardware transcoding for Intel (VAAPI/QSV), AMD (VAAPI) and NVidia (CUDA)
 url: https://github.com/AlexxIT/go2rtc
 image: alexxit/go2rtc
 arch: [ amd64 ]

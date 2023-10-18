@@ -17,4 +17,4 @@ audio: true
 ingress: true
 ingress_port: 1984
 panel_icon: mdi:camera-wireless
-map: [ "config:rw", "media" ]
+map: [ "config:rw", "media", "ssl" ]

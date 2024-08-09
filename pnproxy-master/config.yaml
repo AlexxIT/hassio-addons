@@ -1,0 +1,14 @@
+# https://github.com/AlexxIT/builder/blob/master/builder.sh
+name: pnproxy master
+description: The latest unstable version
+url: https://github.com/AlexxIT/pnproxy
+image: alexxit/pnproxy
+arch: [ amd64, aarch64, i386, armv7 ]
+
+# https://developers.home-assistant.io/docs/add-ons/configuration
+version: master
+slug: pnproxy-master
+init: false
+startup: system
+host_network: true
+map: [ "config" ]

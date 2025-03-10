@@ -6,7 +6,7 @@ image: alexxit/go2rtc
 arch: [ amd64, aarch64, i386, armv7 ]
 
 # https://developers.home-assistant.io/docs/add-ons/configuration
-version: 1.9.8
+version: 1.9.9
 slug: go2rtc
 init: false
 startup: system

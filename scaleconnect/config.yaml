@@ -1,0 +1,16 @@
+name: Smart Scale Connect
+description: Application for synchronizing smart scale data between different ecosystems
+url: https://github.com/AlexxIT/SmartScaleConnect
+image: alexxit/smartscaleconnect
+arch: [ amd64, aarch64, i386, armv7, armhf ]
+
+# https://developers.home-assistant.io/docs/add-ons/configuration
+version: 0.1.0
+slug: scaleconnect
+init: false
+startup: system
+options:
+  sleep: 24h
+schema:
+  sleep: "str"
+map: [ "config:rw" ]

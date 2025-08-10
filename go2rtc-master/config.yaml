@@ -1,5 +1,5 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
-name: go2rtc master
+name: go2rtc (master)
 description: The latest unstable version
 url: https://github.com/AlexxIT/go2rtc
 image: alexxit/go2rtc

@@ -1,5 +1,5 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
-name: pnproxy master
+name: pnproxy (master)
 description: The latest unstable version
 url: https://github.com/AlexxIT/pnproxy
 image: alexxit/pnproxy

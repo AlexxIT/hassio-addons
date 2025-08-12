@@ -9,6 +9,7 @@ version: master
 slug: scaleconnect-master
 init: false
 startup: system
+stdin: true
 options:
   sleep: 24h
 schema:

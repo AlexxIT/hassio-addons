@@ -1,0 +1,20 @@
+# https://github.com/AlexxIT/builder/blob/master/builder.sh
+name: go2rtc rockchip
+description: Hardware transcoding for rockchip
+url: https://github.com/AlexxIT/go2rtc
+image: alexxit/go2rtc
+arch: [ aarch64 ]
+
+# https://developers.home-assistant.io/docs/add-ons/configuration
+version: latest-rockchip
+slug: go2rtc
+init: false
+startup: system
+host_network: true
+homeassistant_api: true
+video: true
+audio: true
+ingress: true
+ingress_port: 1984
+panel_icon: mdi:camera-wireless
+map: [ "config:rw", "media", "ssl" ]

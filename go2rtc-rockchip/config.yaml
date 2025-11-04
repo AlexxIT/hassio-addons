@@ -7,7 +7,7 @@ arch: [ aarch64 ]
 
 # https://developers.home-assistant.io/docs/add-ons/configuration
 version: latest-rockchip
-slug: go2rtc
+slug: go2rtc-rockchip
 init: false
 startup: system
 host_network: true

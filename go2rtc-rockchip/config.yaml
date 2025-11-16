@@ -6,7 +6,7 @@ image: alexxit/go2rtc
 arch: [ aarch64 ]
 
 # https://developers.home-assistant.io/docs/add-ons/configuration
-version: 1.9.11-rockchip
+version: 1.9.12-rockchip
 slug: go2rtc-rockchip
 init: false
 startup: system

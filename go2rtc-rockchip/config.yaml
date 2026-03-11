@@ -1,6 +1,6 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
 name: go2rtc (rockchip)
-description: Hardware transcoding for Rockchip
+description: Rockchip version for advanced user. Transcoding for Rockchip
 url: https://github.com/AlexxIT/go2rtc
 image: alexxit/go2rtc
 arch: [ aarch64 ]

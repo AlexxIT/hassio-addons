@@ -1,1 +1,1 @@
-See https://github.com/AlexxIT/go2rtc/releases
+See https://github.com/AlexxIT/go2rtc/commits/master/

@@ -1,6 +1,6 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
 name: go2rtc
-description: Hardware transcoding for Intel (VAAPI) and Raspberry (V4L2)
+description: Default version for regular user. Transcoding for Intel (VAAPI) and Raspberry (V4L2)
 url: https://github.com/AlexxIT/go2rtc
 image: alexxit/go2rtc
 arch: [ amd64, aarch64, i386, armv7 ]

@@ -1,7 +1,7 @@
 # https://github.com/AlexxIT/builder/blob/master/builder.sh
 name: go2rtc (master)
-description: The latest unstable version
-url: https://github.com/AlexxIT/go2rtc
+description: Master version for beta testers. The latest (and possibly unstable) changes that will be included in the next release
+url: https://github.com/AlexxIT/go2rtc/tree/master
 image: alexxit/go2rtc
 arch: [ amd64, aarch64, i386, armv7 ]
 
